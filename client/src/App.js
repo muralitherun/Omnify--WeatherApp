@@ -15,7 +15,7 @@ function App() {
     
     // Sending REQUEST to the backend for fetching the weather data
     try {
-      const response = await axios.get(`http://localhost:5000/weatherReport?location=${city}`);
+      const response = await axios.get(`https://backend-weather-production.up.railway.app/weatherReport?location=${city}`);
       setWeatherData(response.data);
     } catch (error) {
       console.log('Error:', error.message);
