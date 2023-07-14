@@ -1,0 +1,74 @@
+
+.App, .weather-container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  button {
+    background-color: #41644A;
+    color: white;
+  }
+  
+  .weather-container {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #F6FFDE;
+    text-align: center;
+  }
+  
+  .weather-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .weather-container p {
+    margin: 10px 0;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .form-container input {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .form-container {
+      flex-direction: row;
+    }
+  
+    .form-container input {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }  
