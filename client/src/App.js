@@ -12,7 +12,8 @@ function App() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    
+    // Sending REQUEST to the backend for fetching the weather data
     try {
       const response = await axios.get(`http://localhost:5000/weatherReport?location=${city}`);
       setWeatherData(response.data);
