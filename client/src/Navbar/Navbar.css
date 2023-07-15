@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background-color: #F2BED1;
+  }
+
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .navbar-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .navbar-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
