@@ -48,12 +48,17 @@ It is a Web Application that fetches the current weather conditions, temperature
 
 7. How to run?
 
-   # Start the backend server:
+   If you want to run it locally, follow the instructions:
+      - Go to App.js and change 'https://backend-weather-production.up.railway.app/weatherReport?location=${city}' to http://localhost:5000/weatherReport? location=${city}'
+      - Go to index.js in the 'server' directory and change 'const port = process.env.PORT;' to 'const port = 5000;'.
+   And then do the following:
+
+   # Start the bacend server:
 
       - cd backend
       - npm start
 
-   The server will start running on http://localhost:5000.
+******[NOTE: The server will by default be running as it is hosted on Railway. YOU DON'T HAVE TO RUN IT locally. I'll leave it to your choice.]******   
  
    # Start the frontend development server:
 
