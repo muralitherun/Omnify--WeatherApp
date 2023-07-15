@@ -48,7 +48,9 @@ function App() {
       ) : (
           <div className='weather-container'>
               <h2>WEATHER REPORT</h2>
-              <img alt='anim gif' className='report' src='https://media.giphy.com/media/39xApN4bW6ygdrvBM3/giphy.gif'></img>
+              <br/>
+              <img alt='anim gif' className='report' src='https://media.giphy.com/media/39xApN4bW6ygdrvBM3/giphy.gif'></img>              
+              <div className='weather-content'>
               <p>The current weather condition in {city} is "{weatherData.conditions}".</p>
               <table>
                 <tbody>
@@ -64,6 +66,7 @@ function App() {
               </table>
               <br></br>
               <button className='clear' onClick={handleClearReport}><strong>CLEAR REPORT</strong></button>
+              </div>
           </div>
         )}
       </div>
